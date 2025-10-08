@@ -1,0 +1,29 @@
+{
+  "target": "http://pegionsafetynets.in",
+  "scan_time": "07-10-2025 04:36:38",
+  "modules": {
+    "ssl_info": [
+      "",
+      "Ssl Certificate Information:",
+      "===========================",
+      "",
+      "protocol: TLSv1.3",
+      "cipher-0: TLS_AES_128_GCM_SHA256",
+      "cipher-1: TLSv1.3",
+      "cipher-2: 128",
+      "subject-commonName: pegionsafetynets.in",
+      "issuer-countryName: US",
+      "issuer-organizationName: Let's Encrypt",
+      "issuer-commonName: R10",
+      "version: Version.v3",
+      "serialNumber: 470343661563602648376345762272149514361201",
+      "notBefore: Aug 18 21:21:29 2025 GMT",
+      "notAfter: Nov 16 21:21:28 2025 GMT",
+      "subjectAltName-0: pegionsafetynets.in",
+      ""
+    ]
+  },
+  "headers_info": {},
+  "ssl_details": {},
+  "ip_address": "216.198.79.1"
+}

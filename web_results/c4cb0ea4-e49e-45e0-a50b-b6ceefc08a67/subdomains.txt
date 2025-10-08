@@ -1,0 +1,21 @@
+
+Subdomain Enumeration:
+=====================
+
+Links:
+    - business.whatsapp.com
+    - fb.whatsapp.com
+    - faq.whatsapp.com
+    - chat.whatsapp.com
+    - account.whatsapp.com
+    - in.whatsapp.com
+    - support.whatsapp.com
+    - b.whatsapp.com
+    - blog.whatsapp.com
+    - www.whatsapp.com
+    - autodiscover.whatsapp.com
+    - v.whatsapp.com
+    - whatsapp.com
+    - *.whatsapp.com
+    - web.whatsapp.com
+    - api.whatsapp.com

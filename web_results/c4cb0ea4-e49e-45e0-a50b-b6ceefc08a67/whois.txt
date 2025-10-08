@@ -1,0 +1,28 @@
+
+Whois:
+=====
+
+whois:    Domain Name: WHATSAPP.COM
+   Registry Domain ID: 1517823758_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.registrarsafe.com
+   Registrar URL: http://www.registrarsafe.com
+   Updated Date: 2025-09-24T19:10:25Z
+   Creation Date: 2008-09-04T12:39:12Z
+   Registry Expiry Date: 2034-09-04T12:39:12Z
+   Registrar: RegistrarSafe, LLC
+   Registrar IANA ID: 3237
+   Registrar Abuse Contact Email: abusecomplaints@registrarsafe.com
+   Registrar Abuse Contact Phone: +1-650-308-7004
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited
+   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited
+   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited
+   Name Server: A.NS.WHATSAPP.NET
+   Name Server: B.NS.WHATSAPP.NET
+   Name Server: C.NS.WHATSAPP.NET
+   Name Server: D.NS.WHATSAPP.NET
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+

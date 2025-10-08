@@ -1,0 +1,30 @@
+
+Crawler-Stats:
+=============
+
+Total Unique Links Extracted: 31
+Title : Roblocksec Cybersecurity Solutions
+total_urls_robots: 0
+total_urls_sitemap: 8
+total_urls_css: 4
+total_urls_js: 5
+total_urls_in_js: 2
+total_urls_in_sitemaps: 0
+total_urls_internal: 1
+total_urls_external: 3
+total_urls_images: 8
+total_urls: 31
+
+Directory Search:
+================
+
+Status 200:
+    - 200, https://roblocksec.com/
+    - 200, https://roblocksec.com/index
+    - 200, https://roblocksec.com/index.html
+Status 301:
+    - 301, https://roblocksec.com/About
+    - 301, https://roblocksec.com/css
+    - 301, https://roblocksec.com/fonts
+    - 301, https://roblocksec.com/images
+    - 301, https://roblocksec.com/js

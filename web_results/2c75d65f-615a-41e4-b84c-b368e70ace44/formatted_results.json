@@ -1,0 +1,55 @@
+{
+  "scan_summary": {
+    "target_url": "",
+    "ip_address": "",
+    "scan_timestamp": "06-10-2025 23:55:24 IST",
+    "scan_duration": "",
+    "exported_path": ""
+  },
+  "modules": {
+    "headers": {
+      "title": "Website Information (Headers)",
+      "description": "These are the basic details about the website that your browser receives when visiting it.",
+      "important_headers": {},
+      "all_headers": {
+        "\u001b[36mConnection": "\u001b[0mkeep-alive",
+        "\u001b[36mContent-Length": "\u001b[0m7864",
+        "\u001b[36mServer": "\u001b[0mGitHub.com",
+        "\u001b[36mContent-Type": "\u001b[0mtext/html; charset=utf-8",
+        "\u001b[36mLast-Modified": "\u001b[0mMon, 06 Oct 2025 04:41:18 GMT",
+        "\u001b[36mAccess-Control-Allow-Origin": "\u001b[0m*",
+        "\u001b[36mETag": "\u001b[0mW/\"68e3486e-8594\"",
+        "\u001b[36mexpires": "\u001b[0mMon, 06 Oct 2025 17:38:22 GMT",
+        "\u001b[36mCache-Control": "\u001b[0mmax-age=600",
+        "\u001b[36mContent-Encoding": "\u001b[0mgzip",
+        "\u001b[36mx-proxy-cache": "\u001b[0mMISS",
+        "\u001b[36mX-GitHub-Request-Id": "\u001b[0mCF2E:21FA8A:C912:E933:68E3FC35",
+        "\u001b[36mAccept-Ranges": "\u001b[0mbytes",
+        "\u001b[36mAge": "\u001b[0m0",
+        "\u001b[36mDate": "\u001b[0mMon, 06 Oct 2025 18:25:20 GMT",
+        "\u001b[36mVia": "\u001b[0m1.1 varnish",
+        "\u001b[36mX-Served-By": "\u001b[0mcache-bom-vanm7210089-BOM",
+        "\u001b[36mX-Cache": "\u001b[0mHIT",
+        "\u001b[36mX-Cache-Hits": "\u001b[0m0",
+        "\u001b[36mX-Timer": "\u001b[0mS1759775120.075428,VS0,VE294",
+        "\u001b[36mVary": "\u001b[0mAccept-Encoding",
+        "\u001b[36mX-Fastly-Request-ID": "\u001b[0mf15c8ba5da7a214f98e38f96d457277363f62299"
+      }
+    },
+    "ssl_info": {
+      "title": "Security Certificate Information",
+      "description": "This shows if the website has a valid security certificate to protect your data.",
+      "details": {
+        "protocol": "",
+        "cipher": [],
+        "subject": [],
+        "issuer": [],
+        "version": "",
+        "serialNumber": "",
+        "notBefore": "",
+        "notAfter": "",
+        "subjectAltName": []
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+F:\Major project\ReconBoss-main\ReconBoss-main\reconboss.py:147: DeprecationWarning: The 'registered_domain' property is deprecated and will be removed in the next major version. Use 'top_domain_under_public_suffix' instead, which has the same behavior but a more accurate name.
+  domain = ext.registered_domain
+F:\Major project\ReconBoss-main\ReconBoss-main\modules\sslinfo.py:102: CryptographyDeprecationWarning: Properties that return a naïve datetime object have been deprecated. Please switch to not_valid_before_utc.
+  'notBefore': decoded_cert.not_valid_before.strftime("%b %d %H:%M:%S %Y GMT"),
+F:\Major project\ReconBoss-main\ReconBoss-main\modules\sslinfo.py:103: CryptographyDeprecationWarning: Properties that return a naïve datetime object have been deprecated. Please switch to not_valid_after_utc.
+  'notAfter': decoded_cert.not_valid_after.strftime("%b %d %H:%M:%S %Y GMT"),
+Traceback (most recent call last):
+  File "F:\Major project\ReconBoss-main\ReconBoss-main\reconboss.py", line 217, in <module>
+    cert(hostname, sslp, out_settings, data)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Major project\ReconBoss-main\ReconBoss-main\modules\sslinfo.py", line 117, in cert
+    process_cert(cert_dict)
+    ~~~~~~~~~~~~^^^^^^^^^^^
+  File "F:\Major project\ReconBoss-main\ReconBoss-main\modules\sslinfo.py", line 51, in process_cert
+    print(f'\t{G}\u2514\u2574{C}{sub_key}: {W}{sub_val}')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 6-7: character maps to <undefined>

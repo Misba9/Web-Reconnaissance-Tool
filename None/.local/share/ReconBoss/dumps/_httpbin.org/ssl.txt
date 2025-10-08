@@ -1,0 +1,14 @@
+protocol: TLSv1.2
+cipher-0: ECDHE-RSA-AES128-GCM-SHA256
+cipher-1: TLSv1.2
+cipher-2: 128
+subject-commonName: httpbin.org
+issuer-countryName: US
+issuer-organizationName: Amazon
+issuer-commonName: Amazon RSA 2048 M03
+version: Version.v3
+serialNumber: 18803108618493487645150481186415825213
+notBefore: Jul 20 00:00:00 2025 GMT
+notAfter: Aug 17 23:59:59 2026 GMT
+subjectAltName-0: httpbin.org
+subjectAltName-1: *.httpbin.org

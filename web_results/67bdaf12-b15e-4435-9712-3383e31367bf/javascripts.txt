@@ -1,0 +1,10 @@
+
+Crawler-Javascripts:
+===================
+
+links:
+    - https://roblocksec.com/js/bootstrap.js
+    - https://roblocksec.com/js/jquery-3.4.1.min.js
+    - https://roblocksec.com/js/custom.js
+    - https://kit.fontawesome.com/11ebebdeee.js
+    - https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js

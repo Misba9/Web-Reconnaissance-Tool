@@ -1,0 +1,26 @@
+
+Dns Enumeration:
+===============
+
+dns:
+    - whatsapp.com.           3600    IN      TXT     "b42e0aa4-9d21-4a73-a111-fba236f1a835"
+    - whatsapp.com.           7200    IN      TXT     "v=spf1 include:_spf.fb.com include:_spf.google.com include:facebookmail.com -all"
+    - whatsapp.com.           7200    IN      MX      10 mxa-00082601.gslb.pphosted.com.
+    - whatsapp.com.           3600    IN      TXT     "MS=ms22994725"
+    - whatsapp.com.           21600   IN      NS      d.ns.whatsapp.net.
+    - whatsapp.com.           3600    IN      TXT     "bFwlY7J2JzFYHw5qkQFcBD6EOr9JL4VBpYSXSk3p8lA"
+    - whatsapp.com.           3600    IN      TXT     "google-site-verification=MXbDGih8wW-64G5maXGw8iIkFbH7iv_vLobZd-kxdNo"
+    - whatsapp.com.           60      IN      AAAA    2a03:2880:f285:d0:face:b00c:0:167
+    - whatsapp.com.           3600    IN      TXT     "dropbox-domain-verification=lfq0o9x85s8s"
+    - whatsapp.com.           1800    IN      SOA     a.ns.whatsapp.net. dns.whatsapp.net. 4207849484 14400 1800 604800 300
+    - whatsapp.com.           3600    IN      TXT     "Ghm7XCdpYQEendZNsepA80OBAhbN9sfITvUxiy9FNdOGBxeAQICCmLbuXm23hNaysns+wZ6GskJWMtWD1/Ha9Q=="
+    - whatsapp.com.           21600   IN      NS      c.ns.whatsapp.net.
+    - whatsapp.com.           3600    IN      TXT     "adobe-idp-site-verification=a0d9793b-fc40-430b-9ab4-d3c75e4dcfba"
+    - whatsapp.com.           60      IN      A       163.70.140.60
+    - whatsapp.com.           7200    IN      MX      10 mxb-00082601.gslb.pphosted.com.
+    - whatsapp.com.           3600    IN      CAA     0 issue "digicert.com; account=271b0beda0771d006aa3a6c11b05187d456d6c239b46cb5241196095b09c92af"
+    - whatsapp.com.           21600   IN      NS      b.ns.whatsapp.net.
+    - whatsapp.com.           21600   IN      NS      a.ns.whatsapp.net.
+    - whatsapp.com.           21600   IN      HINFO   \# 10 08524643203834383200
+dmarc:
+    - _dmarc.whatsapp.com.    3600    IN      TXT     "v=DMARC1; p=reject; rua=mailto:a@dmarc.facebookmail.com; pct=100"

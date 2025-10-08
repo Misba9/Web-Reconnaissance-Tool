@@ -1,0 +1,25 @@
+
+Ssl Certificate Information:
+===========================
+
+protocol: TLSv1.3
+cipher: ('TLS_CHACHA20_POLY1305_SHA256', 'TLSv1.3', 256)
+subject-countryName: US
+subject-stateOrProvinceName: California
+subject-localityName: Menlo Park
+subject-organizationName: Meta Platforms, Inc.
+subject-commonName: *.whatsapp.net
+issuer-countryName: US
+issuer-organizationName: DigiCert Inc
+issuer-commonName: DigiCert Global G2 TLS RSA SHA256 2020 CA1
+version: Version.v3
+serialNumber: 6077615784355177239600918267268026907
+notBefore: Jul 17 05:30:00 2025 IST
+notAfter: Oct 16 05:29:59 2025 IST
+subjectAltName-0: *.whatsapp.net
+subjectAltName-1: *.cdn.whatsapp.net
+subjectAltName-2: *.snr.whatsapp.net
+subjectAltName-3: *.whatsapp.com
+subjectAltName-4: wa.me
+subjectAltName-5: whatsapp.com
+subjectAltName-6: whatsapp.net

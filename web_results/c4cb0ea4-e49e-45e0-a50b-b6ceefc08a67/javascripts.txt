@@ -1,0 +1,14 @@
+
+Crawler-Javascripts:
+===================
+
+links:
+    - https://static.whatsapp.net/rsrc.php/v4iaUv4/y5/l/en_GB-j/kydSrClpE3q.js
+    - https://static.whatsapp.net/rsrc.php/v4/yf/r/NyXtW2x3Z8d.js
+    - https://static.whatsapp.net/rsrc.php/v4iiGQ4/yQ/l/en_GB-j/BzySBiPbD8XK8hNADkmBLTsBAlT61OMH71JzpOeAFp_GVyveF9crKF_HaImj7R9kMx5dYO4soUymZUhJI1DsCQ8HC-PkNtDDgyGxgKblAd3PPf.js
+    - https://static.whatsapp.net/rsrc.php/v4i2p84/yA/l/en_GB-j/Om4zGHLchR_CxRfhpFZrFwBsWF7XCDYdUIfTmSWGAbkTUFwEqOJvf4U3mDh4wvkHoPEtuQWfTtJaCxT9IaHKCOBmKgDRyNq4h2sYHy9XiP6UdVvsWqehdEtWw.js
+    - https://static.whatsapp.net/rsrc.php/v4/yy/r/b7T5MdTCPEl.js
+    - https://static.whatsapp.net/rsrc.php/v4/yJ/r/JM0XFwwijCt.js
+    - https://static.whatsapp.net/rsrc.php/v4/yr/r/-fXmGAXmuOw.js
+    - https://static.whatsapp.net/rsrc.php/v4/yb/r/2-SfBP72eD3.js
+    - https://static.whatsapp.net/rsrc.php/v4iKzo4/yV/l/en_GB-j/lah5Gf6-7NJ.js

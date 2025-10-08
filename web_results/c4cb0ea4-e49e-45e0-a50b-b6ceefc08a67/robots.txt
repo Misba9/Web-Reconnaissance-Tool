@@ -1,0 +1,12 @@
+
+Crawler-Robots:
+==============
+
+links:
+    - https://web.whatsapp.com/%F0%9F%8C%90/
+    - https://web.whatsapp.com/accept*
+    - https://web.whatsapp.com/product*
+    - https://web.whatsapp.com/send*
+    - https://web.whatsapp.com/
+    - https://web.whatsapp.com/$
+    - https://web.whatsapp.com/catalog*

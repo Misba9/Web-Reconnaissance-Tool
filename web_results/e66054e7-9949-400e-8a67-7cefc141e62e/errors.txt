@@ -1,0 +1,8 @@
+F:\Major project\ReconBoss-main\ReconBoss-main\reconboss.py:166: DeprecationWarning: The 'registered_domain' property is deprecated and will be removed in the next major version. Use 'top_domain_under_public_suffix' instead, which has the same behavior but a more accurate name.
+  domain = ext.registered_domain
+Traceback (most recent call last):
+  File "F:\Major project\ReconBoss-main\ReconBoss-main\reconboss.py", line 197, in <module>
+    os.makedirs(respath)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "<frozen os>", line 228, in makedirs
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'None/.local/share/ReconBoss/dumps/_07-10-2025_00:09:38_roblocksec.com'

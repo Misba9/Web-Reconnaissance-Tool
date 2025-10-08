@@ -1,0 +1,26 @@
+{
+  "scan_summary": {
+    "target_url": "",
+    "ip_address": "",
+    "scan_timestamp": "06-10-2025 23:56:29 IST",
+    "scan_duration": "",
+    "exported_path": ""
+  },
+  "modules": {
+    "ssl_info": {
+      "title": "Security Certificate Information",
+      "description": "This shows if the website has a valid security certificate to protect your data.",
+      "details": {
+        "protocol": "",
+        "cipher": [],
+        "subject": [],
+        "issuer": [],
+        "version": "",
+        "serialNumber": "",
+        "notBefore": "",
+        "notAfter": "",
+        "subjectAltName": []
+      }
+    }
+  }
+}

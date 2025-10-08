@@ -1,0 +1,10 @@
+
+Crawler-External Urls:
+=====================
+
+links:
+    - https://maps.google.co.in/maps?hl=en&tab=wl
+    - https://www.youtube.com/?tab=w1
+    - http://www.google.co.in/services/
+    - http://www.google.co.in/history/optout?hl=en
+    - https://www.google.co.in/intl/en/about/products?tab=wh

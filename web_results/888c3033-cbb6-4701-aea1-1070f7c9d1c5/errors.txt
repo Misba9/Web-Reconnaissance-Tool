@@ -1,0 +1,8 @@
+F:\Major project\ReconBoss-main\ReconBoss-main\reconboss.py:147: DeprecationWarning: The 'registered_domain' property is deprecated and will be removed in the next major version. Use 'top_domain_under_public_suffix' instead, which has the same behavior but a more accurate name.
+  domain = ext.registered_domain
+Traceback (most recent call last):
+  File "F:\Major project\ReconBoss-main\ReconBoss-main\reconboss.py", line 215, in <module>
+    from modules.sslinfo import cert
+  File "F:\Major project\ReconBoss-main\ReconBoss-main\modules\sslinfo.py", line 7, in <module>
+    from cryptography import x509
+ModuleNotFoundError: No module named 'cryptography'

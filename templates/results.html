@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}ReconBoss - Scan Results{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2><i class="fas fa-chart-bar"></i> Scan Results</h2>
+    
+    <div class="results-header">
+        <div class="target-info">
+            <span>{{ result_data.target or task.target_url }}</span>
+            <span class="elapsed-time">Task ID: {{ task_id }}</span>
+        </div>
+        <div class="result-actions">
+            <a href="{{ url_for('download_results', task_id=task_id) }}" class="btn-secondary">
+                <i class="fas fa-download"></i> TXT
+            </a>
+            <a href="{{ url_for('download_json_results', task_id=task_id) }}" class="btn-secondary">
+                <i class="fas fa-download"></i> JSON
+            </a>
+            <a href="{{ url_for('download_pdf_results', task_id=task_id) }}" class="btn-secondary">
+                <i class="fas fa-file-pdf"></i> PDF
+            </a>
+        </div>
+    </div>
+    
+    {% if result_data.headers_info %}
+    <div class="module">
+        <h3><i class="fas fa-heading"></i> Headers Information</h3>
+        <div class="module-content">
+            <div class="headers-grid">
+                {% for key, value in result_data.headers_info.items() %}
+                <div class="header-item">
+                    <div class="header-key">{{ key }}</div>
+                    <div class="header-value">{{ value }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    
+    {% if result_data.modules %}
+        {% for module_name, module_content in result_data.modules.items() %}
+        <div class="module">
+            <h3><i class="fas fa-info-circle"></i> {{ module_name.title() }} Results</h3>
+            <div class="module-content">
+                <pre>{{ '\n'.join(module_content) if module_content is iterable and module_content is not string else module_content }}</pre>
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

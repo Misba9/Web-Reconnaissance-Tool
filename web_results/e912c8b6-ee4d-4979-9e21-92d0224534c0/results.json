@@ -1,0 +1,11 @@
+{
+  "module-SSL Certificate Information": {
+    "protocol": "TLSv1.3",
+    "cipher-0": "TLS_AES_128_GCM_SHA256",
+    "cipher-1": "TLSv1.3",
+    "cipher-2": 128,
+    "subject-commonName": "pegionsafetynets.in",
+    "issuer-countryName": "US",
+    "issuer-organizationName": "Let's Encrypt",
+    "issuer-commonName": "R10",
+    "version": 

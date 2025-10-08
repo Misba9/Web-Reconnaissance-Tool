@@ -1,0 +1,22 @@
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 06 Oct 2025 18:10:11 GMT
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000
+Origin-Trial: AmhMBR6zCLzDDxpW+HfpP67BqwIknWnyMOXOQGfzYswFmJe+fgaI6XZgAzcxOrzNtP7hEDsOo1jdjFnVr2IdxQ4AAAB4eyJvcmlnaW4iOiJodHRwczovL3lvdXR1YmUuY29tOjQ0MyIsImZlYXR1cmUiOiJXZWJWaWV3WFJlcXVlc3RlZFdpdGhEZXByZWNhdGlvbiIsImV4cGlyeSI6MTc1ODA2NzE5OSwiaXNTdWJkb21haW4iOnRydWV9
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Report-To: {"group":"youtube_main","max_age":2592000,"endpoints":[{"url":"https://csp.withgoogle.com/csp/report-to/youtube_main"}]}
+Content-Security-Policy: require-trusted-types-for 'script'
+Cross-Origin-Opener-Policy: same-origin-allow-popups; report-to="youtube_main"
+reporting-endpoints: default="/web-reports?context=eJwNzltIk3EYBvD-PmG2b9v3ff-3jFxRycSL3JjHEA-YpImgeVFgrpinrSR1Orc1y0qoTEnEiiy1BLtQ6SAWEcgYQpBiWJYHpNAKb0SSDkRrCWH_ix_Pxfvw8GpCm10bNcyYV8tGLtSzE7Eult7gYjnTDaxlpYG157pZcMDNnvjdrGfKwwrmPWxtr5dZo73s7ryXVX_2sT6lOMwXVRzmL9HA4dDgd7cGPxc18H3XwLpfgs4sQRFm8yWsFUp4MSjB_0zC0ooEj1WLH6VaJHm0cAa1WC3SIdCtw8ysDmXLOsQd1SO9XY-hUT2KJvS4IST91ePbPz2M8TJSMmQMH5bhtcuQvDJ62mTE35ER0S9jZFzGjtcyAkYFEaUKNMJMr4LFPwrS1hWcJBXNFhX3jqlYsqkoOKWiqUnFFSH7utChIrNLxdhDFYZhFTSnYteqiuWQCv1WjpqdHImJHLFZHM9zOT4KG_kcBVaOOhtHsIWDujhOD3I0C9eGODICHC_HRL7lMExzpM1w7JvniFngiAxyZIYTFoRVYU4ipMgE6zaCZTthPZJQGEVoEwoMhC27CY_2EMYEiibkGAl5MYRKIS6Z8CFNdDIJjizCr4OEr9mEm4cIniOEkOAvJtQdJ_SWEN5bCbHl4lZNSKghaJyEW8KneoLZQ1jzEQ40EmYvEnSXxGYr4VWH-O024X4_ofMBwTVAeDdEmHxMOPOU8GWUkOwndAn9AcK5cULfpOhMEc4bNoVzbcTl9s6JcCV09U0rizY1Oj1uT7ndfNZebnK4nLVuk7220lThqnJXVZRV2xIsCcmW1ESL2ZJqq7P8B3k9wDM"
+document-policy: include-js-call-stacks-in-crash-reports
+P3P: CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=en-GB for more info."
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+Set-Cookie: GPS=1; Domain=.youtube.com; Expires=Mon, 06-Oct-2025 18:40:11 GMT; Path=/; Secure; HttpOnly, YSC=z1QFNW8c4yg; Domain=.youtube.com; Path=/; Secure; HttpOnly; SameSite=none, __Secure-YEC=; Domain=.youtube.com; Expires=Tue, 10-Jan-2023 18:10:11 GMT; Path=/; Secure; HttpOnly; SameSite=lax, VISITOR_INFO1_LIVE=MlWBiH1iNZg; Domain=.youtube.com; Expires=Sat, 04-Apr-2026 18:10:11 GMT; Path=/; Secure; HttpOnly; SameSite=none, VISITOR_PRIVACY_METADATA=CgJJThIEGgAgaQ%3D%3D; Domain=.youtube.com; Expires=Sat, 04-Apr-2026 18:10:11 GMT; Path=/; Secure; HttpOnly; SameSite=none, __Secure-ROLLOUT_TOKEN=CKHIxpu5_Pe6HBCFrPzllZCQAxiFrPzllZCQAw%3D%3D; Domain=youtube.com; Expires=Sat, 04-Apr-2026 18:10:11 GMT; Path=/; Secure; HttpOnly; SameSite=none; Partitioned
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked

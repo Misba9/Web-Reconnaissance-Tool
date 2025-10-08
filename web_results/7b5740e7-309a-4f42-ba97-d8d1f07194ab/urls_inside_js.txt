@@ -1,0 +1,7 @@
+
+Crawler-Urls Inside Js:
+======================
+
+links:
+    - https://kit.fontawesome.com
+    - https://ka-f.fontawesome.com

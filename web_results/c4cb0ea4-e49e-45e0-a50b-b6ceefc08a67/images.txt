@@ -1,0 +1,11 @@
+
+Crawler-Images:
+==============
+
+links:
+    - https://web.whatsapp.com/images/whatsapp/web/landing/logo-opera.png
+    - https://web.whatsapp.com/images/whatsapp/web/landing/logo-whatsapp.png
+    - https://web.whatsapp.com/images/whatsapp/web/landing/logo-chrome.png
+    - https://web.whatsapp.com/images/whatsapp/web/landing/logo-edge.png
+    - https://web.whatsapp.com/images/whatsapp/web/landing/logo-safari.png
+    - https://web.whatsapp.com/images/whatsapp/web/landing/logo-firefox.png

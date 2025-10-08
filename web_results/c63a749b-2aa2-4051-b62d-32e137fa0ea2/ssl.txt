@@ -1,0 +1,15 @@
+
+Ssl Certificate Information:
+===========================
+
+protocol: TLSv1.3
+cipher: ('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128)
+subject-commonName: pegionsafetynets.in
+issuer-countryName: US
+issuer-organizationName: Let's Encrypt
+issuer-commonName: R10
+version: Version.v3
+serialNumber: 470343661563602648376345762272149514361201
+notBefore: Aug 19 02:51:29 2025 IST
+notAfter: Nov 17 02:51:28 2025 IST
+subjectAltName-0: pegionsafetynets.in

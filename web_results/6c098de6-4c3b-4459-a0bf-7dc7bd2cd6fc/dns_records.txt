@@ -1,0 +1,50 @@
+
+Dns Enumeration:
+===============
+
+dns:
+    - google.com.             3590    IN      TXT     "v=spf1 include:_spf.google.com ~all"
+    - google.com.             8786    IN      NS      ns1.google.com.
+    - google.com.             3590    IN      TXT     "onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef"
+    - google.com.             3600    IN      TXT     "google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0"
+    - google.com.             300     IN      AAAA    2404:6800:4009:803::200e
+    - google.com.             21590   IN      NS      ns2.google.com.
+    - google.com.             3600    IN      TXT     "cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b"
+    - google.com.             8786    IN      NS      ns3.google.com.
+    - google.com.             21590   IN      NS      ns1.google.com.
+    - google.com.             3600    IN      TXT     "v=spf1 include:_spf.google.com ~all"
+    - google.com.             3590    IN      TXT     "facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95"
+    - google.com.             21590   IN      NS      ns4.google.com.
+    - google.com.             3590    IN      TXT     "google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0"
+    - google.com.             21590   IN      HTTPS   1 . alpn=h2,h3
+    - google.com.             3600    IN      TXT     "docusign=1b0a6754-49b1-4db5-8540-d2c12664b289"
+    - google.com.             3600    IN      TXT     "apple-domain-verification=30afIBcvSuDV2PLX"
+    - google.com.             3600    IN      TXT     "onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef"
+    - google.com.             50      IN      SOA     ns1.google.com. dns-admin.google.com. 816128774 900 900 1800 60
+    - google.com.             20096   IN      CAA     0 issue "pki.goog"
+    - google.com.             60      IN      SOA     ns1.google.com. dns-admin.google.com. 816128774 900 900 1800 60
+    - google.com.             59      IN      A       142.250.70.78
+    - google.com.             3600    IN      TXT     "docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e"
+    - google.com.             3590    IN      TXT     "docusign=1b0a6754-49b1-4db5-8540-d2c12664b289"
+    - google.com.             8786    IN      NS      ns4.google.com.
+    - google.com.             3590    IN      TXT     "docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e"
+    - google.com.             21590   IN      CAA     0 issue "pki.goog"
+    - google.com.             3590    IN      TXT     "apple-domain-verification=30afIBcvSuDV2PLX"
+    - google.com.             290     IN      MX      10 smtp.google.com.
+    - google.com.             3590    IN      TXT     "MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB"
+    - google.com.             3600    IN      TXT     "MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB"
+    - google.com.             21590   IN      NS      ns3.google.com.
+    - google.com.             3600    IN      TXT     "google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ"
+    - google.com.             3600    IN      TXT     "google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o"
+    - google.com.             3600    IN      TXT     "facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95"
+    - google.com.             3590    IN      TXT     "cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b"
+    - google.com.             3590    IN      TXT     "google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ"
+    - google.com.             3590    IN      TXT     "globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8="
+    - google.com.             13      IN      MX      10 smtp.google.com.
+    - google.com.             8786    IN      NS      ns2.google.com.
+    - google.com.             3600    IN      TXT     "globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8="
+    - google.com.             290     IN      AAAA    2404:6800:4009:828::200e
+    - google.com.             290     IN      A       142.250.192.46
+    - google.com.             3590    IN      TXT     "google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o"
+dmarc:
+    - _dmarc.google.com.      300     IN      TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com"

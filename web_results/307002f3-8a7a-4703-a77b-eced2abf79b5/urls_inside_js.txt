@@ -1,0 +1,33 @@
+
+Crawler-Urls Inside Js:
+======================
+
+links:
+    - http://www.w3.org/1999/xhtml
+    - https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=400
+    - http://www.w3.org/2000/svg
+    - https://www.pegionsafetynets.in/
+    - https://www.pegionsafetynets.in/about
+    - https://www.pegionsafetynets.in/industrial-safety-nets
+    - https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400
+    - https://www.pegionsafetynets.in/balcony-invisible-grid
+    - https://www.pegionsafetynets.in/children-safety-nets
+    - https://wa.me/919900077665?text=Hi, I need information about safety nets installation
+    - https://images.pexels.com/photos/1048297/pexels-photo-1048297.jpeg?auto=compress&cs=tinysrgb&w=400
+    - http://www.w3.org/1999/xlink
+    - http://www.w3.org/XML/1998/namespace
+    - https://www.pegionsafetynets.in/balcony-clothes-hanger
+    - http://www.w3.org/1998/Math/MathML
+    - https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=400
+    - https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=400
+    - https://wa.me/919900077665
+    - https://www.pegionsafetynets.in/balcony-safety-nets
+    - https://reactjs.org/docs/error-decoder.html?invariant=
+    - https://www.pegionsafetynets.in/contact
+    - https://www.pegionsafetynets.in/pigeon-safety-nets
+    - https://api.web3forms.com/submit
+    - http://localhost
+    - https://www.pegionsafetynets.in/duct-area-safety-nets
+    - https://www.pegionsafetynets.in/construction-safety-nets
+    - https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=400
+    - https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=400

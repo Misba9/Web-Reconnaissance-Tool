@@ -1,0 +1,24 @@
+{
+  "target": "",
+  "ip_address": "",
+  "scan_time": "",
+  "exported_path": "",
+  "modules": {
+    "ssl_info": [
+      "\u001b[32m[+] \u001b[36mprotocol : \u001b[0mTLSv1.3",
+      "\u001b[32m[+] \u001b[36mcipher\u001b[0m"
+    ]
+  },
+  "scan_timestamp": "06-10-2025 23:56:29 IST",
+  "ssl_details": {
+    "protocol": "",
+    "cipher": [],
+    "subject": [],
+    "issuer": [],
+    "version": "",
+    "serialNumber": "",
+    "notBefore": "",
+    "notAfter": "",
+    "subjectAltName": []
+  }
+}

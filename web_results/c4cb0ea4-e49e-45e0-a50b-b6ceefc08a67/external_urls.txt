@@ -1,0 +1,10 @@
+
+Crawler-External Urls:
+=====================
+
+links:
+    - https://www.opera.com/
+    - https://www.google.com/chrome/
+    - https://support.apple.com/downloads/#safari
+    - http://www.firefox.com/
+    - https://www.microsoft.com/edge

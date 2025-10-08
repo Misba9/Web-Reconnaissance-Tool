@@ -1,0 +1,226 @@
+{
+  "module-headers": {
+    "Connection": "keep-alive",
+    "Content-Length": "7864",
+    "Server": "GitHub.com",
+    "Content-Type": "text/html; charset=utf-8",
+    "Last-Modified": "Mon, 06 Oct 2025 04:41:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "ETag": "W/\"68e3486e-8594\"",
+    "expires": "Mon, 06 Oct 2025 22:38:40 GMT",
+    "Cache-Control": "max-age=600",
+    "Content-Encoding": "gzip",
+    "x-proxy-cache": "MISS",
+    "X-GitHub-Request-Id": "6DEE:21217E:31CD8:3DA2E:68E44294",
+    "Accept-Ranges": "bytes",
+    "Age": "0",
+    "Date": "Tue, 07 Oct 2025 00:20:56 GMT",
+    "Via": "1.1 varnish",
+    "X-Served-By": "cache-bom-vanm7210097-BOM",
+    "X-Cache": "HIT",
+    "X-Cache-Hits": "0",
+    "X-Timer": "S1759796456.054640,VS0,VE285",
+    "Vary": "Accept-Encoding",
+    "X-Fastly-Request-ID": "f4f6866932b995c707fcc85790808955715756cf",
+    "exported": true
+  },
+  "module-SSL Certificate Information": {
+    "protocol": "TLSv1.3",
+    "cipher": "('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128)",
+    "subject-commonName": "roblocksec.com",
+    "issuer-countryName": "US",
+    "issuer-organizationName": "Let's Encrypt",
+    "issuer-commonName": "R12",
+    "version": "Version.v3",
+    "serialNumber": "577412984663465804629009595145146844636540",
+    "notBefore": "Oct 06 09:13:29 2025 IST",
+    "notAfter": "Jan 04 09:13:28 2026 IST",
+    "subjectAltName-0": "roblocksec.com",
+    "exported": true
+  },
+  "module-whois": {
+    "whois": "   Domain Name: ROBLOCKSEC.COM\r\n   Registry Domain ID: 2949370202_DOMAIN_COM-VRSN\r\n   Registrar WHOIS Server: whois.hostinger.com\r\n   Registrar URL: http://www.hostinger.com\r\n   Updated Date: 2025-03-28T14:25:50Z\r\n   Creation Date: 2025-01-10T13:56:11Z\r\n   Registry Expiry Date: 2028-01-10T13:56:11Z\r\n   Registrar: HOSTINGER operations, UAB\r\n   Registrar IANA ID: 1636\r\n   Registrar Abuse Contact Email: abuse-tracker@hostinger.com\r\n   Registrar Abuse Contact Phone: +37064503378\r\n   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\r\n   Name Server: NS1.DNS-PARKING.COM\r\n   Name Server: NS2.DNS-PARKING.COM\r\n   DNSSEC: unsigned\r\n   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\r\n",
+    "exported": true
+  },
+  "module-DNS Enumeration": {
+    "dns": [
+      "roblocksec.com.         13006   IN      CAA     0 issuewild \"pki.goog\"",
+      "roblocksec.com.         300     IN      AAAA    2606:50c0:8000::153",
+      "roblocksec.com.         13006   IN      CAA     0 issuewild \"globalsign.com\"",
+      "roblocksec.com.         20965   IN      NS      ns1.dns-parking.com.",
+      "roblocksec.com.         577     IN      A       185.199.109.153",
+      "roblocksec.com.         13006   IN      CAA     0 issue \"letsencrypt.org\"",
+      "roblocksec.com.         300     IN      AAAA    2606:50c0:8002::153",
+      "roblocksec.com.         577     IN      A       185.199.110.153",
+      "roblocksec.com.         577     IN      A       185.199.111.153",
+      "roblocksec.com.         300     IN      AAAA    2606:50c0:8003::153",
+      "roblocksec.com.         13006   IN      CAA     0 issue \"sectigo.com\"",
+      "roblocksec.com.         13006   IN      CAA     0 issuewild \"sectigo.com\"",
+      "roblocksec.com.         600     IN      SOA     ns1.dns-parking.com. dns.hostinger.com. 2025100509 10000 2400 604800 600",
+      "roblocksec.com.         13006   IN      CAA     0 issuewild \"comodoca.com\"",
+      "roblocksec.com.         13006   IN      CAA     0 issue \"pki.goog\"",
+      "roblocksec.com.         300     IN      AAAA    2606:50c0:8001::153",
+      "roblocksec.com.         13006   IN      CAA     0 issue \"globalsign.com\"",
+      "roblocksec.com.         2395    IN      HINFO   \\# 9 075246433834383200",
+      "roblocksec.com.         13006   IN      CAA     0 issuewild \"letsencrypt.org\"",
+      "roblocksec.com.         13006   IN      CAA     0 issue \"digicert.com\"",
+      "roblocksec.com.         13006   IN      CAA     0 issue \"comodoca.com\"",
+      "roblocksec.com.         13006   IN      CAA     0 issuewild \"digicert.com\"",
+      "roblocksec.com.         20965   IN      NS      ns2.dns-parking.com.",
+      "roblocksec.com.         577     IN      A       185.199.108.153"
+    ],
+    "dmarc": [
+      "DMARC Record Not Found!"
+    ],
+    "exported": true
+  },
+  "module-Subdomain Enumeration": {
+    "Links": [
+      "roblocksec.com",
+      "www.roblocksec.com"
+    ],
+    "exported": true
+  },
+  "module-Port Scan": {
+    "ports": [
+      "80",
+      "53",
+      "443",
+      "8888"
+    ],
+    "exported": true
+  },
+  "module-crawler-sitemap": {
+    "links": [
+      "https://roblocksec.com/Cybersecurity-Consulting-and-Advisory/",
+      "https://roblocksec.com/Cybersecurity-Training-and-Awareness/",
+      "https://roblocksec.com/Compliance-and-Governance/",
+      "https://roblocksec.com/Product-Research-and-Development/",
+      "https://roblocksec.com/Contact-Us/",
+      "https://roblocksec.com/",
+      "https://roblocksec.com/About/",
+      "https://roblocksec.com/Cybersecurity-Testing-and-Assessment/"
+    ],
+    "exported": true
+  },
+  "module-crawler-css": {
+    "links": [
+      "https://roblocksec.com/css/bootstrap.css",
+      "https://roblocksec.com/css/responsive.css",
+      "https://roblocksec.com/css/style.css",
+      "https://roblocksec.com/css/font-awesome.min.css"
+    ],
+    "exported": true
+  },
+  "module-crawler-javascripts": {
+    "links": [
+      "https://kit.fontawesome.com/11ebebdeee.js",
+      "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
+      "https://roblocksec.com/js/jquery-3.4.1.min.js",
+      "https://roblocksec.com/js/bootstrap.js",
+      "https://roblocksec.com/js/custom.js"
+    ],
+    "exported": true
+  },
+  "module-crawler-internal_urls": {
+    "links": [
+      "https://roblocksec.com"
+    ],
+    "exported": true
+  },
+  "module-crawler-external_urls": {
+    "links": [
+      "https://www.instagram.com/king_misba/",
+      "https://in.linkedin.com/in/kappala-roshan-49a5a4253?trk=people_directory",
+      "https://www.instagram.com/roblocksec/"
+    ],
+    "exported": true
+  },
+  "module-crawler-images": {
+    "links": [
+      "https://roblocksec.com/images/slider-img-003.png",
+      "https://roblocksec.com/images/case-2.jpg",
+      "https://roblocksec.com/images/slider-img-001.png",
+      "https://roblocksec.com/images/case-1.jpg",
+      "https://roblocksec.com/images/profile.png",
+      "https://roblocksec.com/images/slider-img-002.png",
+      "https://roblocksec.com/images/s1.png",
+      "https://roblocksec.com/images/about-img.png"
+    ],
+    "exported": true
+  },
+  "module-crawler-urls_inside_sitemap": {
+    "links": [],
+    "exported": true
+  },
+  "module-crawler-urls_inside_js": {
+    "links": [
+      "https://kit.fontawesome.com",
+      "https://ka-f.fontawesome.com"
+    ],
+    "exported": true
+  },
+  "module-crawler-stats": {
+    "Total Unique Links Extracted": "31",
+    "Title ": "Roblocksec Cybersecurity Solutions",
+    "total_urls_robots": 0,
+    "total_urls_sitemap": 8,
+    "total_urls_css": 4,
+    "total_urls_js": 5,
+    "total_urls_in_js": 2,
+    "total_urls_in_sitemaps": 0,
+    "total_urls_internal": 1,
+    "total_urls_external": 3,
+    "total_urls_images": 8,
+    "total_urls": 31,
+    "exported": true
+  },
+  "module-Directory Search": {
+    "Status 200": [
+      "200, https://roblocksec.com/",
+      "200, https://roblocksec.com/index",
+      "200, https://roblocksec.com/index.html"
+    ],
+    "Status 301": [
+      "301, https://roblocksec.com/About",
+      "301, https://roblocksec.com/css",
+      "301, https://roblocksec.com/fonts",
+      "301, https://roblocksec.com/images",
+      "301, https://roblocksec.com/js"
+    ],
+    "exported": true
+  },
+  "module-wayback_urls": {
+    "links": [
+      "https://roblocksec.com/Cybersecurity-Consulting-and-Advisory/",
+      "",
+      "https://roblocksec.com/js/jquery-3.4.1.min.js",
+      "https://roblocksec.com/images/logo-nav-rem.png",
+      "https://roblocksec.com/js/bootstrap.js",
+      "https://roblocksec.com/Product-Research-and-Development/",
+      "https://roblocksec.com/Contact-Us/",
+      "https://roblocksec.com/js/custom.js",
+      "https://roblocksec.com/css/bootstrap.css",
+      "https://roblocksec.com/Cybersecurity-Training-and-Awareness/",
+      "https://roblocksec.com/css/font-awesome.min.css",
+      "https://roblocksec.com/images/profile.png",
+      "https://www.roblocksec.com/",
+      "https://roblocksec.com/images/about-img.png",
+      "https://roblocksec.com/Compliance-and-Governance/",
+      "https://roblocksec.com/images/case-2.jpg",
+      "https://roblocksec.com/images/slider-img-001.png",
+      "https://roblocksec.com/",
+      "https://roblocksec.com/About/",
+      "https://roblocksec.com/images/slider-img-002.png",
+      "https://roblocksec.com/images/s1.png",
+      "https://roblocksec.com/css/responsive.css",
+      "https://roblocksec.com/images/slider-img-003.png",
+      "http://roblocksec.com/",
+      "https://roblocksec.com/images/case-1.jpg",
+      "http://www.roblocksec.com/",
+      "https://roblocksec.com/Cybersecurity-Testing-and-Assessment/",
+      "https://roblocksec.com/css/style.css"
+    ],
+    "exported": true
+  }
+}

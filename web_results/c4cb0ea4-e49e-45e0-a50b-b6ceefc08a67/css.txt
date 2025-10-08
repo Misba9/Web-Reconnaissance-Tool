@@ -1,0 +1,6 @@
+
+Crawler-Css:
+===========
+
+links:
+    - https://static.whatsapp.net/rsrc.php/v5/yk/l/0,cross/pa8MLaPYYQUo9CkWL5FIgGVrCBT5F3pqa.css

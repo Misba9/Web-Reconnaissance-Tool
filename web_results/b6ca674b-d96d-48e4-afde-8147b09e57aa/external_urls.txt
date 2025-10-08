@@ -1,0 +1,13 @@
+
+Crawler-External Urls:
+=====================
+
+links:
+    - https://www.opera.com/
+    - https://www.google.com/chrome/
+    - https://www.instagram.com/roblocksec/
+    - https://www.instagram.com/king_misba/
+    - https://support.apple.com/downloads/#safari
+    - http://www.firefox.com/
+    - https://www.microsoft.com/edge
+    - https://in.linkedin.com/in/kappala-roshan-49a5a4253?trk=people_directory

@@ -1,0 +1,15 @@
+
+Ssl Certificate Information:
+===========================
+
+protocol: TLSv1.3
+cipher: ('TLS_AES_256_GCM_SHA384', 'TLSv1.3', 256)
+subject-commonName: www.google.com
+issuer-countryName: US
+issuer-organizationName: Google Trust Services
+issuer-commonName: WR2
+version: Version.v3
+serialNumber: 29742679693922149871994463318678829765
+notBefore: Sep 15 14:07:19 2025 IST
+notAfter: Dec 08 14:07:18 2025 IST
+subjectAltName-0: www.google.com
