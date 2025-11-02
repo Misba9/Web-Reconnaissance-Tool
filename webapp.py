@@ -15,7 +15,7 @@ from werkzeug.utils import secure_filename
 class CustomJSONEncoder(json.JSONEncoder):
     def default(self, obj):
         # Handle datetime objects
-        if isinstance(obj, datetime):web: python webapp.py
+        if isinstance(obj, datetime):
             return obj.isoformat()
         # Handle Version objects and other non-serializable objects
         return str(obj)
