@@ -10,3 +10,4 @@ flask
 aiodns
 pytz
 reportlab
+gunicorn
