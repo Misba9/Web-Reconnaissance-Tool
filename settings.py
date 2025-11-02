@@ -3,8 +3,16 @@
 from os import getenv, path, makedirs
 from json import loads
 from shutil import copytree
+import platform
 
-home = getenv('HOME')
+# Cross-platform home directory detection
+if platform.system() == "Windows":
+    home = getenv('USERPROFILE')
+    if not home:
+        home = getenv('HOMEDRIVE', 'C:') + getenv('HOMEPATH', '\\Users\\Public')
+else:
+    home = getenv('HOME', '/tmp')
+
 usr_data = f'{home}/.local/share/ReconBoss/dumps/'
 conf_path = f'{home}/.config/ReconBoss'
 path_to_script = path.dirname(path.realpath(__file__))
