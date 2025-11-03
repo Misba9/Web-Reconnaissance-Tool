@@ -187,10 +187,18 @@ try:
 
 	start_time = datetime.datetime.now()
 
+	# Initialize out_settings and respath with default values
+	out_settings = {
+		'format': 'None',
+		'directory': None,
+		'file': None
+	}
+	respath = None
+
 	if output != 'None':
 		fpath = usr_data
 		ist = pytz.timezone('Asia/Kolkata')
-		dt_now = str(datetime.datetime.now(ist).strftime('%d-%m-%Y_%H:%M:%S'))
+		dt_now = str(datetime.datetime.now(ist).strftime('%d-%m-%Y_%H-%M-%S'))  # Changed : to - for Windows compatibility
 		fname = f'{dt_now}_{hostname}.{output}'
 		respath = f'{fpath}_{dt_now}_{hostname}'
 		if not os.path.exists(respath):
@@ -269,7 +277,7 @@ try:
 	if pscan:
 		from modules.portscan import scan
 		log_writer('Starting port scan...')
-		scan(ip, out_settings, data, threads, print_formatted_result)
+		scan(ip, out_settings, data, pscan_threads, print_formatted_result)
 
 	if dirrec:
 		from modules.dirrec import hammer
@@ -285,10 +293,10 @@ try:
 	end_time = datetime.datetime.now() - start_time
 	data['Reconnaissance Completion Time'] = str(end_time)
 	print_formatted_result(f"Reconnaissance completed in: {str(end_time)}")
-	log_writer(f'Completed in {end_time}')
-	data['Results Exported To'] = respath
-	print_formatted_result(f"Results exported to: {respath}")
-	log_writer(f'Exported to {respath}')
+	if respath:
+		data['Results Exported To'] = respath
+		print_formatted_result(f"Results exported to: {respath}")
+		log_writer(f'Exported to {respath}')
 	log_writer(f'{"-" * 30}')
 	sys.exit()
 except KeyboardInterrupt:

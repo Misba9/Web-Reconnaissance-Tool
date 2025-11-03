@@ -8,17 +8,17 @@ import time
 import threading
 import pytz
 from datetime import datetime
-from flask import Flask, render_template, request, jsonify, send_file, url_for
+from flask import Flask, render_template, request, jsonify, send_file, url_for, make_response
 from werkzeug.utils import secure_filename
 
 # Custom JSON encoder to handle non-serializable objects
 class CustomJSONEncoder(json.JSONEncoder):
-    def default(self, obj):
+    def default(self, o):
         # Handle datetime objects
-        if isinstance(obj, datetime):
-            return obj.isoformat()
+        if isinstance(o, datetime):
+            return o.isoformat()
         # Handle Version objects and other non-serializable objects
-        return str(obj)
+        return str(o)
 
 # Add the project root to the Python path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +39,21 @@ from reportlab.lib import colors
 
 app = Flask(__name__)
 app.secret_key = 'reconboss_secret_key_2025'
+
+# Add CSP headers to all responses
+@app.after_request
+def after_request(response):
+    response.headers['Content-Security-Policy'] = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; "
+        "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; "
+        "img-src 'self' data: https:; "
+        "font-src 'self' https://cdnjs.cloudflare.com; "
+        "connect-src 'self'; "
+        "frame-src 'none'; "
+        "object-src 'none';"
+    )
+    return response
 
 # In-memory storage for scan tasks (in production, use a database)
 scan_tasks = {}
@@ -154,20 +169,18 @@ def run_scan_task(task_id, target_url, options):
                                 key = key.strip()
                                 value = value.strip()
                                 
-                                if 'Subject' in current_section and 'Subject Alternative Name' not in current_section:
+                                if current_section and 'Subject' in current_section and 'Subject Alternative Name' not in current_section:
                                     subject_info.append(f"{key}: {value}")
-                                elif 'Issuer' in current_section:
+                                elif current_section and 'Issuer' in current_section:
                                     issuer_info.append(f"{key}: {value}")
-                                elif 'Subject Alternative Name' in current_section:
+                                elif current_section and 'Subject Alternative Name' in current_section:
                                     san_info.append(value)
-                                else:
-                                    ssl_details[key] = value
                             elif line and current_section:
-                                if 'Subject' in current_section and 'Subject Alternative Name' not in current_section:
+                                if current_section and 'Subject' in current_section and 'Subject Alternative Name' not in current_section:
                                     subject_info.append(line)
-                                elif 'Issuer' in current_section:
+                                elif current_section and 'Issuer' in current_section:
                                     issuer_info.append(line)
-                                elif 'Subject Alternative Name' in current_section:
+                                elif current_section and 'Subject Alternative Name' in current_section:
                                     san_info.append(line)
                         
                         # Add parsed information to ssl_details

@@ -1,0 +1,11 @@
+{
+  "module-Port Scan": {
+    "ports": [
+      "80",
+      "53",
+      "443",
+      "8888"
+    ],
+    "exported": true
+  }
+}

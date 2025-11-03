@@ -62,21 +62,45 @@ def cert(hostname, sslp, output, data, print_formatted_result_func):
 				print_formatted_result_func(f"{key}")
 				unpack(val, pair)
 				for sub_key, sub_val in pair.items():
-					print_formatted_result_func(f"  {sub_key}: {sub_val}")
+					# Handle Unicode characters that might cause encoding issues
+					try:
+						print_formatted_result_func(f"  {sub_key}: {sub_val}")
+					except UnicodeEncodeError:
+						# If there's a Unicode encoding issue, convert to ASCII
+						safe_sub_val = sub_val.encode('ascii', 'ignore').decode('ascii')
+						print_formatted_result_func(f"  {sub_key}: {safe_sub_val}")
 					result.update({f'{key}-{sub_key}': sub_val})
 				pair.clear()
 			elif isinstance(val, dict):
 				print_formatted_result_func(f"{key}")
 				for sub_key, sub_val in val.items():
-					print_formatted_result_func(f"  {sub_key}: {sub_val}")
+					# Handle Unicode characters that might cause encoding issues
+					try:
+						print_formatted_result_func(f"  {sub_key}: {sub_val}")
+					except UnicodeEncodeError:
+						# If there's a Unicode encoding issue, convert to ASCII
+						safe_sub_val = sub_val.encode('ascii', 'ignore').decode('ascii')
+						print_formatted_result_func(f"  {sub_key}: {safe_sub_val}")
 					result.update({f'{key}-{sub_key}': sub_val})
 			elif isinstance(val, list):
 				print_formatted_result_func(f"{key}")
 				for sub_val in val:
-					print_formatted_result_func(f"  {sub_val}")
+					# Handle Unicode characters that might cause encoding issues
+					try:
+						print_formatted_result_func(f"  {sub_val}")
+					except UnicodeEncodeError:
+						# If there's a Unicode encoding issue, convert to ASCII
+						safe_sub_val = sub_val.encode('ascii', 'ignore').decode('ascii')
+						print_formatted_result_func(f"  {safe_sub_val}")
 					result.update({f'{key}-{val.index(sub_val)}': sub_val})
 			else:
-				print_formatted_result_func(f"{key}: {val}")
+				# Handle Unicode characters that might cause encoding issues
+				try:
+					print_formatted_result_func(f"{key}: {val}")
+				except UnicodeEncodeError:
+					# If there's a Unicode encoding issue, convert to ASCII
+					safe_val = val.encode('ascii', 'ignore').decode('ascii')
+					print_formatted_result_func(f"{key}: {safe_val}")
 				result.update({key: val})
 
 	if presence:

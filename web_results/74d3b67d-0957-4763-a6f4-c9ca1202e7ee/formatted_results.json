@@ -1,0 +1,19 @@
+{
+  "target": "https://www.roblocksec.com",
+  "scan_time": "03-11-2025 05:44:04 IST",
+  "modules": {
+    "subdomains": [
+      "",
+      "Subdomain Enumeration:",
+      "=====================",
+      "",
+      "Links:",
+      "    - roblocksec.com",
+      "    - www.roblocksec.com",
+      ""
+    ]
+  },
+  "headers_info": {},
+  "ssl_details": {},
+  "ip_address": "66.33.60.35"
+}

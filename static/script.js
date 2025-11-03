@@ -50,78 +50,78 @@ const portscanContent = document.getElementById('portscanContent');
 const rawOutput = document.getElementById('rawOutput');
 
 // Form submission handler
-scanForm.addEventListener('submit', function(e) {
+scanForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    
+
     const targetUrl = document.getElementById('target_url').value;
     if (!targetUrl) {
         alert('Please enter a target URL');
         return;
     }
-    
+
     // Disable button and show loading
     scanBtn.disabled = true;
     scanBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Scanning...';
-    
+
     // Reset UI
     hideResults();
     showStatus('Initializing scan...');
-    
+
     // Submit scan request
     const formData = new FormData(scanForm);
-    
+
     fetch('/scan', {
         method: 'POST',
         body: formData
     })
-    .then(response => response.json())
-    .then(data => {
-        if (data.error) {
-            throw new Error(data.error);
-        }
-        
-        taskId = data.task_id;
-        startTime = new Date();
-        startTimer();
-        startStatusCheck();
-    })
-    .catch(error => {
-        showError('Error starting scan: ' + error.message);
-        resetForm();
-    });
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                throw new Error(data.error);
+            }
+
+            taskId = data.task_id;
+            startTime = new Date();
+            startTimer();
+            startStatusCheck();
+        })
+        .catch(error => {
+            showError('Error starting scan: ' + error.message);
+            resetForm();
+        });
 });
 
-// Start checking status
+// Start checking status every 50 seconds
 function startStatusCheck() {
-    statusCheckInterval = setInterval(checkStatus, 2000);
+    statusCheckInterval = setInterval(checkStatus, 50000); // 50 seconds
 }
 
 // Check scan status
 function checkStatus() {
     if (!taskId) return;
-    
+
     fetch(`/status/${taskId}`)
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'running') {
-            showStatus('Scan in progress...');
-            updateProgress(50); // We could make this more dynamic
-        } else if (data.status === 'completed') {
-            clearInterval(statusCheckInterval);
-            clearInterval(timerInterval);
-            showStatus('Scan completed successfully!');
-            updateProgress(100);
-            showResults(data);
-        } else if (data.status === 'error') {
-            clearInterval(statusCheckInterval);
-            clearInterval(timerInterval);
-            showError('Scan failed: ' + (data.error || 'Unknown error'));
-            resetForm();
-        }
-    })
-    .catch(error => {
-        console.error('Error checking status:', error);
-    });
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'running') {
+                showStatus('Scan in progress...');
+                updateProgress(50); // We could make this more dynamic
+            } else if (data.status === 'completed') {
+                clearInterval(statusCheckInterval);
+                clearInterval(timerInterval);
+                showStatus('Scan completed successfully!');
+                updateProgress(100);
+                showResults(data);
+            } else if (data.status === 'error') {
+                clearInterval(statusCheckInterval);
+                clearInterval(timerInterval);
+                showError('Scan failed: ' + (data.error || 'Unknown error'));
+                resetForm();
+            }
+        })
+        .catch(error => {
+            console.error('Error checking status:', error);
+        });
 }
 
 // Show status section
@@ -151,7 +151,7 @@ function startTimer() {
         const seconds = Math.floor(elapsed / 1000) % 60;
         const minutes = Math.floor(elapsed / (1000 * 60)) % 60;
         const hours = Math.floor(elapsed / (1000 * 60 * 60));
-        
+
         timer.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }, 1000);
 }
@@ -160,59 +160,59 @@ function startTimer() {
 function showResults(data) {
     // Get structured results
     fetch(`/results_json/${taskId}`)
-    .then(response => response.json())
-    .then(jsonData => {
-        // Update summary
-        resultTargetUrl.textContent = data.target_url || 'Unknown target';
-        summaryTarget.textContent = jsonData.target || data.target_url || 'Unknown target';
-        summaryIp.textContent = jsonData.ip_address || 'Not available';
-        summaryTime.textContent = jsonData.scan_time || 'Not available';
-        summaryPath.textContent = jsonData.exported_path || 'Not available';
-        
-        // Format elapsed time
-        const elapsedSeconds = Math.floor(data.elapsed_time);
-        const minutes = Math.floor(elapsedSeconds / 60);
-        const seconds = elapsedSeconds % 60;
-        resultElapsedTime.textContent = `Completed in ${minutes}m ${seconds}s`;
-        
-        // Display modules
-        displayModuleResults(jsonData);
-        
-        // Show results section
-        statusSection.style.display = 'none';
-        resultsSection.style.display = 'block';
-        
-        // Reset form
-        resetForm();
-    })
-    .catch(error => {
-        // Fallback to raw output if JSON parsing fails
-        fetch(`/results/${taskId}`)
-        .then(response => response.text())
-        .then(content => {
-            rawOutput.textContent = content;
-            document.querySelector('.raw-output').style.display = 'block';
-            
+        .then(response => response.json())
+        .then(jsonData => {
+            // Update summary
             resultTargetUrl.textContent = data.target_url || 'Unknown target';
-            
+            summaryTarget.textContent = jsonData.target || data.target_url || 'Unknown target';
+            summaryIp.textContent = jsonData.ip_address || 'Not available';
+            summaryTime.textContent = jsonData.scan_time || 'Not available';
+            summaryPath.textContent = jsonData.exported_path || 'Not available';
+
             // Format elapsed time
             const elapsedSeconds = Math.floor(data.elapsed_time);
             const minutes = Math.floor(elapsedSeconds / 60);
             const seconds = elapsedSeconds % 60;
             resultElapsedTime.textContent = `Completed in ${minutes}m ${seconds}s`;
-            
+
+            // Display modules
+            displayModuleResults(jsonData);
+
             // Show results section
             statusSection.style.display = 'none';
             resultsSection.style.display = 'block';
-            
+
             // Reset form
             resetForm();
         })
-        .catch(error2 => {
-            showError('Error fetching results: ' + error.message);
-            resetForm();
+        .catch(error => {
+            // Fallback to raw output if JSON parsing fails
+            fetch(`/results/${taskId}`)
+                .then(response => response.text())
+                .then(content => {
+                    rawOutput.textContent = content;
+                    document.querySelector('.raw-output').style.display = 'block';
+
+                    resultTargetUrl.textContent = data.target_url || 'Unknown target';
+
+                    // Format elapsed time
+                    const elapsedSeconds = Math.floor(data.elapsed_time);
+                    const minutes = Math.floor(elapsedSeconds / 60);
+                    const seconds = elapsedSeconds % 60;
+                    resultElapsedTime.textContent = `Completed in ${minutes}m ${seconds}s`;
+
+                    // Show results section
+                    statusSection.style.display = 'none';
+                    resultsSection.style.display = 'block';
+
+                    // Reset form
+                    resetForm();
+                })
+                .catch(error2 => {
+                    showError('Error fetching results: ' + error.message);
+                    resetForm();
+                });
         });
-    });
 }
 
 // Display module results
@@ -227,18 +227,18 @@ function displayModuleResults(data) {
     directoryModule.style.display = 'none';
     waybackModule.style.display = 'none';
     portscanModule.style.display = 'none';
-    
+
     // Display enhanced results if available
     if (data.headers_info) {
         displayHeadersInfo(data.headers_info);
         headersModule.style.display = 'block';
     }
-    
+
     if (data.ssl_details) {
         displaySSLInfo(data.ssl_details);
         sslModule.style.display = 'block';
     }
-    
+
     // Display regular module content
     if (data.modules && Object.keys(data.modules).length > 0) {
         for (const [module, content] of Object.entries(data.modules)) {
@@ -256,14 +256,14 @@ function displayModuleResults(data) {
 // Display headers information in a grid
 function displayHeadersInfo(headers) {
     headersGrid.innerHTML = '';
-    
+
     // Create header items for important headers
     const importantHeaders = [
-        'Date', 'Server', 'Last-Modified', 'Content-Type', 
+        'Date', 'Server', 'Last-Modified', 'Content-Type',
         'Content-Length', 'Cache-Control', 'Expires', 'ETag',
         'X-Powered-By', 'X-Frame-Options', 'X-XSS-Protection'
     ];
-    
+
     // Display important headers first
     importantHeaders.forEach(headerName => {
         if (headers[headerName]) {
@@ -276,7 +276,7 @@ function displayHeadersInfo(headers) {
             headersGrid.appendChild(headerItem);
         }
     });
-    
+
     // Display other headers
     for (const [key, value] of Object.entries(headers)) {
         if (!importantHeaders.includes(key)) {
@@ -294,7 +294,7 @@ function displayHeadersInfo(headers) {
 // Display SSL information in sections
 function displaySSLInfo(sslInfo) {
     sslDetails.innerHTML = '';
-    
+
     // Protocol
     if (sslInfo.protocol) {
         const protocolSection = document.createElement('div');
@@ -305,7 +305,7 @@ function displaySSLInfo(sslInfo) {
         `;
         sslDetails.appendChild(protocolSection);
     }
-    
+
     // Version
     if (sslInfo.version) {
         const versionSection = document.createElement('div');
@@ -316,7 +316,7 @@ function displaySSLInfo(sslInfo) {
         `;
         sslDetails.appendChild(versionSection);
     }
-    
+
     // Serial Number
     if (sslInfo.serialNumber) {
         const serialSection = document.createElement('div');
@@ -327,7 +327,7 @@ function displaySSLInfo(sslInfo) {
         `;
         sslDetails.appendChild(serialSection);
     }
-    
+
     // Validity Period
     if (sslInfo.notBefore || sslInfo.notAfter) {
         const validitySection = document.createElement('div');
@@ -339,7 +339,7 @@ function displaySSLInfo(sslInfo) {
         `;
         sslDetails.appendChild(validitySection);
     }
-    
+
     // Cipher
     if (sslInfo.cipher && sslInfo.cipher.length > 0) {
         const cipherSection = document.createElement('div');
@@ -352,7 +352,7 @@ function displaySSLInfo(sslInfo) {
         `;
         sslDetails.appendChild(cipherSection);
     }
-    
+
     // Subject
     if (sslInfo.subject && sslInfo.subject.length > 0) {
         const subjectSection = document.createElement('div');
@@ -365,7 +365,7 @@ function displaySSLInfo(sslInfo) {
         `;
         sslDetails.appendChild(subjectSection);
     }
-    
+
     // Issuer
     if (sslInfo.issuer && sslInfo.issuer.length > 0) {
         const issuerSection = document.createElement('div');
@@ -378,7 +378,7 @@ function displaySSLInfo(sslInfo) {
         `;
         sslDetails.appendChild(issuerSection);
     }
-    
+
     // Subject Alternative Names
     if (sslInfo.subjectAltName && sslInfo.subjectAltName.length > 0) {
         const sanSection = document.createElement('div');
@@ -396,7 +396,7 @@ function displaySSLInfo(sslInfo) {
 // Display content for a specific module
 function displayModuleContent(moduleName, content) {
     let moduleElement, contentElement;
-    
+
     switch (moduleName) {
         case 'headers':
             // Skip if we already displayed enhanced headers
@@ -441,28 +441,28 @@ function displayModuleContent(moduleName, content) {
         default:
             return;
     }
-    
+
     // Clear previous content
     contentElement.innerHTML = '';
-    
+
     // Process content based on format
     if (Array.isArray(content)) {
         // For headers and other key-value pairs
         const list = document.createElement('ul');
         list.style.listStyleType = 'none';
         list.style.paddingLeft = '0';
-        
+
         content.forEach(line => {
             const item = document.createElement('li');
             item.style.padding = '8px 0';
             item.style.borderBottom = '1px solid #e9ecef';
-            
+
             // Check if it's a key-value pair
             if (line.includes(':')) {
                 const parts = line.split(':', 2);
                 const key = parts[0].trim();
                 const value = parts[1].trim();
-                
+
                 item.innerHTML = `<div style="display: flex; flex-wrap: wrap;">
                     <span style="font-weight: 600; min-width: 200px; color: #4361ee;">${key}:</span>
                     <span style="flex: 1; word-break: break-word;">${value}</span>
@@ -473,7 +473,7 @@ function displayModuleContent(moduleName, content) {
                     const parts = line.split('└╴');
                     const indent = parts[0].replace(/\s/g, '').length; // Count non-space characters for indentation
                     const value = parts[1].trim();
-                    
+
                     item.innerHTML = `<div style="display: flex; align-items: center;">
                         <span style="margin-left: ${indent * 20}px"></span>
                         <span style="margin-left: 10px;">${value}</span>
@@ -483,21 +483,21 @@ function displayModuleContent(moduleName, content) {
                     item.textContent = line;
                 }
             }
-            
+
             list.appendChild(item);
         });
-        
+
         // Remove last border
         if (list.lastChild) {
             list.lastChild.style.borderBottom = 'none';
         }
-        
+
         contentElement.appendChild(list);
     } else {
         // For plain text content
         contentElement.textContent = content;
     }
-    
+
     // Show the module
     moduleElement.style.display = 'block';
 }
@@ -514,29 +514,29 @@ function resetForm() {
 }
 
 // Download handlers
-downloadTxtBtn.addEventListener('click', function() {
+downloadTxtBtn.addEventListener('click', function () {
     if (taskId) {
         window.location.href = `/download/${taskId}`;
     }
 });
 
-downloadJsonBtn.addEventListener('click', function() {
+downloadJsonBtn.addEventListener('click', function () {
     if (taskId) {
         window.location.href = `/download_json/${taskId}`;
     }
 });
 
-downloadPdfBtn.addEventListener('click', function() {
+downloadPdfBtn.addEventListener('click', function () {
     if (taskId) {
         window.location.href = `/download_pdf/${taskId}`;
     }
 });
 
 // Full scan checkbox handler
-document.getElementById('full_scan').addEventListener('change', function() {
+document.getElementById('full_scan').addEventListener('change', function () {
     const isChecked = this.checked;
     const checkboxes = document.querySelectorAll('.option input[type="checkbox"]:not(#full_scan)');
-    
+
     checkboxes.forEach(checkbox => {
         checkbox.disabled = isChecked;
         if (isChecked) {

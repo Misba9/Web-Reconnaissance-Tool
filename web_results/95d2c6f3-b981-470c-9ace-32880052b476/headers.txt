@@ -1,0 +1,12 @@
+
+Headers:
+=======
+
+Cache-Control: private, no-store, max-age=0
+Content-Type: text/html; charset=utf-8
+Server: Vercel
+X-Vercel-Challenge-Token: 2.1762128654.60.ZGE0ODM3MWM2MDk3YjFkOTZmMDk4MjMzOGI1MmRkMTQ7YzQxZjQ4Yzg7NWVjN2I3YmU0YTQ1OTM5MzJhZDM0ZTVjYzliYzI5MTAwOWE4OTM4NzszO5X1aFZX1n+pl9vKOTDS4bHp5OFTadDlVdM4sSq4gSI0A17LxA1orlBs7svIwXSo+w+Ta1ekU3bMWQ==.ae3337fc6570a0ae14934192ac01f444
+X-Vercel-Id: bom1::1762128654-2UD5NF1zqBaU2yc81KSkyRgZkFoidKNl
+X-Vercel-Mitigated: challenge
+Date: Mon, 03 Nov 2025 00:10:54 GMT
+Transfer-Encoding: chunked

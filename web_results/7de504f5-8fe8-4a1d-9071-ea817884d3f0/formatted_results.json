@@ -1,0 +1,46 @@
+{
+  "target": "https://www.roblocksec.com",
+  "scan_time": "03-11-2025 05:43:06 IST",
+  "modules": {
+    "headers": [
+      "",
+      "Headers:",
+      "=======",
+      "",
+      "Access-Control-Allow-Origin: *",
+      "Age: 39499",
+      "Cache-Control: public, max-age=0, must-revalidate",
+      "Content-Disposition: inline",
+      "Content-Encoding: gzip",
+      "Content-Type: text/html; charset=utf-8",
+      "Date: Mon, 03 Nov 2025 00:13:08 GMT",
+      "Etag: W/\"1d278294119a5d729336f3d715153b47\"",
+      "Last-Modified: Sun, 02 Nov 2025 13:14:48 GMT",
+      "Server: Vercel",
+      "Strict-Transport-Security: max-age=63072000",
+      "X-Vercel-Cache: HIT",
+      "X-Vercel-Id: bom1::d5msf-1762128788280-a7e431a4c26c",
+      "Transfer-Encoding: chunked",
+      ""
+    ]
+  },
+  "headers_info": {
+    "Headers": "",
+    "Access-Control-Allow-Origin": "*",
+    "Age": "39499",
+    "Cache-Control": "public, max-age=0, must-revalidate",
+    "Content-Disposition": "inline",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Mon, 03 Nov 2025 00:13:08 GMT",
+    "Etag": "W/\"1d278294119a5d729336f3d715153b47\"",
+    "Last-Modified": "Sun, 02 Nov 2025 13:14:48 GMT",
+    "Server": "Vercel",
+    "Strict-Transport-Security": "max-age=63072000",
+    "X-Vercel-Cache": "HIT",
+    "X-Vercel-Id": "bom1::d5msf-1762128788280-a7e431a4c26c",
+    "Transfer-Encoding": "chunked"
+  },
+  "ssl_details": {},
+  "ip_address": "66.33.60.35"
+}

@@ -1,0 +1,21 @@
+{
+  "target": "https://www.roblocksec.com",
+  "scan_time": "03-11-2025 05:45:44 IST",
+  "modules": {
+    "portscan": [
+      "",
+      "Port Scan:",
+      "=========",
+      "",
+      "ports:",
+      "    - 80",
+      "    - 53",
+      "    - 443",
+      "    - 8888",
+      ""
+    ]
+  },
+  "headers_info": {},
+  "ssl_details": {},
+  "ip_address": "66.33.60.35"
+}

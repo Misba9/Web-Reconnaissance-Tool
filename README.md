@@ -18,7 +18,7 @@ python3 reconboss.py --headers https://xyz.ac.in
 ReconBoss now includes a web interface for easier usage:
 
 ```bash
-python3 webapp.py
+python webapp.py
 ```
 
 Then open your browser to http://localhost:5000

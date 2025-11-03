@@ -1,0 +1,16 @@
+{
+  "module-SSL Certificate Information": {
+    "protocol": "TLSv1.3",
+    "cipher": "('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128)",
+    "subject-commonName": "www.roblocksec.com",
+    "issuer-countryName": "US",
+    "issuer-organizationName": "Let's Encrypt",
+    "issuer-commonName": "R12",
+    "version": "Version.v3",
+    "serialNumber": "437586628069756993747312156574330946009623",
+    "notBefore": "Oct 10 20:32:55 2025 IST",
+    "notAfter": "Jan 08 20:32:54 2026 IST",
+    "subjectAltName-0": "www.roblocksec.com",
+    "exported": true
+  }
+}

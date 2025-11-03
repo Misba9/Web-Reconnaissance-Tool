@@ -11,3 +11,4 @@ aiodns
 pytz
 reportlab
 gunicorn
+cryptography

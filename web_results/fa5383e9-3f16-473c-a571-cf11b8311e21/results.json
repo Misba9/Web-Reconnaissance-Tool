@@ -1,0 +1,6 @@
+{
+  "module-whois": {
+    "whois": "   Domain Name: ROBLOCKSEC.COM\r\n   Registry Domain ID: 2949370202_DOMAIN_COM-VRSN\r\n   Registrar WHOIS Server:\r\n   Registrar URL: http://www.hostinger.com\r\n   Updated Date: 2025-11-01T08:49:16Z\r\n   Creation Date: 2025-01-10T13:56:11Z\r\n   Registry Expiry Date: 2028-01-10T13:56:11Z\r\n   Registrar: HOSTINGER operations, UAB\r\n   Registrar IANA ID: 1636\r\n   Registrar Abuse Contact Email: abuse-tracker@hostinger.com\r\n   Registrar Abuse Contact Phone: +37064503378\r\n   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\r\n   Name Server: NS1.DNS-PARKING.COM\r\n   Name Server: NS2.DNS-PARKING.COM\r\n   DNSSEC: unsigned\r\n   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\r\n",
+    "exported": true
+  }
+}
