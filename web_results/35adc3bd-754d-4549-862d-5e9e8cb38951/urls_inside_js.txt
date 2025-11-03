@@ -1,0 +1,27 @@
+
+Crawler-Urls Inside Js:
+======================
+
+links:
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/0d1117/00ffff?text=Case+Study
+    - http://www.w3.org/1999/xhtml
+    - https://reactjs.org/docs/error-decoder.html?invariant=
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/800x600/0d1117/1f6feb?text=Quantum
+    - https://media.licdn.com/dms/image/v2/D5603AQGf1PieYIKNGw/profile-displayphoto-shrink_800_800/B56ZYb29XQGcAk-/0/1744224115225?e=1762992000&v=beta&t=Y6WpJ5JQcctHa3M0htMoGfFoms_ohuq6QquBu_lWpOI
+    - https://media.licdn.com/dms/image/v2/D5603AQGZOMLljgcA4A/profile-displayphoto-crop_800_800/B56ZkFr4wOHUAI-/0/1756737015854?e=1762992000&v=beta&t=Y0ay4DskdtTh-UPNfi8a2jfuvZzDLWbae638kvNSkjY
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/150x60/ffffff/000000?text=GDPR
+    - http://www.w3.org/2000/svg
+    - http://www.w3.org/1998/Math/MathML
+    - http://www.w3.org/XML/1998/namespace
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/0d1117/8957e5?text=Case+Study
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/800x600/0d1117/8957e5?text=AI+Phishing
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/150x60/ffffff/000000?text=ISO+27001
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/0d1117/1f6feb?text=Case+Study
+    - http://www.w3.org/1999/xlink
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/150x60/ffffff/000000?text=SOC+2
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/150x60/ffffff/000000?text=PCI+DSS
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/800x600/0d1117/238636?text=Security+Culture
+    - https://media.licdn.com/dms/image/v2/D5603AQHnohD8h97qJg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725030792613?e=1762992000&v=beta&t=8kQU9YkCCGSHl025AmLF5DTc7sioL3Ookz179ZRQ75Q
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/150x60/ffffff/000000?text=HIPAA
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/800x600/0d1117/00ffff?text=Zero-Day
+    - https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/0d1117/238636?text=Case+Study

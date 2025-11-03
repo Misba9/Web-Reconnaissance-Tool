@@ -105,7 +105,7 @@ function checkStatus() {
         .then(data => {
             if (data.status === 'running') {
                 showStatus('Scan in progress...');
-                updateProgress(50); // We could make this more dynamic
+                updateProgress(50); // Set progress to 50% while running
             } else if (data.status === 'completed') {
                 clearInterval(statusCheckInterval);
                 clearInterval(timerInterval);
@@ -144,7 +144,7 @@ function updateProgress(percent) {
     progressFill.style.width = percent + '%';
 }
 
-// Start timer
+// Start timer - update every 5 seconds instead of every second to reduce flickering
 function startTimer() {
     timerInterval = setInterval(() => {
         const elapsed = new Date() - startTime;
@@ -153,7 +153,7 @@ function startTimer() {
         const hours = Math.floor(elapsed / (1000 * 60 * 60));
 
         timer.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-    }, 1000);
+    }, 5000); // Update every 5 seconds instead of every second
 }
 
 // Show results section
